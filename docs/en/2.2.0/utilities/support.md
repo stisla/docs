@@ -11,4 +11,4 @@ For others, you can explore the component pages in the template, and you can get
 
 Also, you can make component requests or new features and we will consider them.
 
-If you need help, please send an email to nauvalazhar2@gmail.com with the subject "Stisla Support - Your Subject".
+If you find a bug or think of something cool to make Stisa better, please [create an issue](https://github.com/stisla/stisla/issues).
