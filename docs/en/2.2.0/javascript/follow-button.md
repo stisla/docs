@@ -12,21 +12,21 @@ Next is the JavaScript for follow button. We've created a simple function to mak
 Here is an example of a follow button.
 
 ```html
-<a href="#" class="btn btn-primary mt-3 follow-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Follow</a>
+<a href="javascript:;" class="btn btn-primary mt-3 follow-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Follow</a>
 ```
 <div class="preview">
     <div class="text-center">
-    <a href="#" class="btn btn-primary mt-3 follow-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Follow</a>
+    <a href="javascript:;" class="btn btn-primary mt-3 follow-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Follow</a>
     </div>
 </div>
 
 Or like this
 ```html
-<a href="#" class="btn btn-primary mt-3 follow-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Follow</a>
+<a href="javascript:;" class="btn btn-primary mt-3 follow-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Follow</a>
 ```
 <div class="preview">
     <div class="text-center">
-    <a href="#" class="btn btn-danger mt-3 following-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Following</a>
+    <a href="javascript:;" class="btn btn-danger mt-3 following-btn" data-follow-action="alert('follow clicked');" data-unfollow-action="alert('unfollow clicked');">Following</a>
     </div>
 </div>
 

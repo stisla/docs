@@ -92,19 +92,23 @@
   <script src="https://demo.getstisla.com/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
   <script src="https://demo.getstisla.com/assets/modules/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://demo.getstisla.com/assets/js/stisla.js"></script>
   
   <!-- JS Libraies -->
   <script src="https://demo.getstisla.com/assets/modules/prism/prism.js"></script>
-  <script src="https://demo.getstisla.com/assets/modules/sticky-kit.js"></script>
-  <script src="https://demo.getstisla.com/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
   <!-- Page Specific JS File -->
-  <script>var base_url = 'https://getstisla.com/', overview = 'https://docs.getstisla.com/#/en/2.2.0/overview';</script>
+  <script id="page-js">
+    var base_url      = 'https://getstisla.com/', 
+        overview      = 'https://docs.getstisla.com/#/en/2.2.0/overview',
+        load_scripts  = [
+                      'https://demo.getstisla.com/assets/js/stisla.js', 
+                      'https://demo.getstisla.com/assets/modules/sticky-kit.js',
+                      'https://demo.getstisla.com/assets/modules/chocolat/dist/js/jquery.chocolat.min.js',
+                      'https://demo.getstisla.com/assets/js/scripts.js'
+                    ];
+  </script>
 
   <!-- Template JS File -->
-  <script src="https://demo.getstisla.com/assets/js/scripts.js"></script>
-  <script src="https://demo.getstisla.com/assets/js/custom.js"></script>
   <script src="//unpkg.com/navigo@6"></script>
   <script src="assets/js/scripts.js"></script>
 </body>

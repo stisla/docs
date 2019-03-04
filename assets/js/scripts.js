@@ -199,6 +199,19 @@ function req(path) {
   });
 }
 
+function scripts(arr) {
+  arr.forEach((item) => {
+    var el = $('<script/>', {
+      src: item
+    });
+
+    $(document).find(el).remove();
+    console.log($('html', el));
+   
+    $("#page-js").before(el);
+  });
+}
+
 /**
  * Routing
  */
@@ -257,6 +270,7 @@ router
       let template = errorTpl(error.status)
 
       $('.main-content .section-body').html(template);
+      scripts(load_scripts);
     });
   })
   .resolve();
