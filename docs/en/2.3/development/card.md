@@ -13,6 +13,20 @@ This template is Bootstrap 4 based, so we use the card to make the grouping in t
 
 We also changed a little style on this Bootstrap built-in card. To create a card use the following structure.
 
+<div class="preview">
+  <div class="card">
+    <div class="card-header">
+      <h4>Card title</h4>
+    </div>
+    <div class="card-body">
+      Card content
+    </div>
+    <div class="card-footer">
+      Card footer
+    </div>
+  </div>
+</div>
+
 ```html
 <!-- card wrapper -->
   <div class="card">
@@ -32,13 +46,21 @@ We also changed a little style on this Bootstrap built-in card. To create a card
   </div>
 ```
 
+If you want to create card without header you can add `.card-body` as a additional class of `.card`
+
+<div class="preview">
+  <div class="card card-body">
+    Card without Header
+  </div>
+</div>
+
 You can also customize the border-top color of the card by adding additional classes as follows.
 
 ```html
 <div class="card card-primary">
-    ...
-    ..
-  </div>
+  ...
+  ..
+</div>
 ```
 
 Here are the colors supported on the card.
@@ -56,17 +78,16 @@ Here are the colors supported on the card.
 ## Collapsable Card
 
 In addition, you can also create a collapsable card.
-```html
+
+<div class="preview">
 <div class="card">
-    <div class="card-header">
-      <h4>Show/Hide</h4>
-      <!-- card toggle -->
-      <div class="card-header-action">
-        <a data-collapse="#mycard-collapse" class="btn btn-icon"><i class="ion ion-minus"></i></a>
-      </div>
+  <div class="card-header">
+    <h4>Show/Hide</h4>
+    <div class="card-header-action">
+      <a data-collapse="#mycard-collapse" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
     </div>
-    <!-- card collapsable content -->
-    <div class="collapse show" id="mycard-collapse">
+    </div>
+    <div class="collapse show" id="mycard-collapse" style="">
       <div class="card-body">
         You can show or hide this card.
       </div>
@@ -75,6 +96,25 @@ In addition, you can also create a collapsable card.
       </div>
     </div>
   </div>
+</div>
+
+```html
+<div class="card">
+  <div class="card-header">
+    <h4>Show/Hide</h4>
+    <div class="card-header-action">
+      <a data-collapse="#mycard-collapse" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
+    </div>
+  </div>
+  <div class="collapse show" id="mycard-collapse" style="">
+    <div class="card-body">
+      You can show or hide this card.
+    </div>
+    <div class="card-footer">
+      Card Footer
+    </div>
+  </div>
+</div>
 ```
 <a name="card-dismissible"></a>
 
@@ -82,13 +122,12 @@ In addition, you can also create a collapsable card.
 
 Lastly, you can also create a dismissible card.
 
-```html
-<div class="card" id="mycard-dimiss">
+<div class="preview">
+  <div class="card" id="mycard-dimiss">
     <div class="card-header">
       <h4>Dismiss</h4>
-      <!-- card dismiss toggle -->
       <div class="card-header-action">
-        <a data-dismiss="#mycard-dimiss" class="btn btn-icon"><i class="ion ion-close"></i></a>
+        <a data-dismiss="#mycard-dimiss" class="btn btn-icon btn-danger" href="#"><i class="fas fa-times"></i></a>
       </div>
     </div>
     <div class="card-body">
@@ -98,6 +137,24 @@ Lastly, you can also create a dismissible card.
       Card Footer
     </div>
   </div>
+</div>
+
+```html
+<div class="card" id="mycard-dimiss">
+  <div class="card-header">
+    <h4>Dismiss</h4>
+    <!-- card dismiss toggle -->
+    <div class="card-header-action">
+      <a data-dismiss="#mycard-dimiss" class="btn btn-icon"><i class="ion ion-close"></i></a>
+    </div>
+  </div>
+  <div class="card-body">
+    You can dimiss this card.
+  </div>
+  <div class="card-footer">
+    Card Footer
+  </div>
+</div>
 ```
 
 <div class="alert alert-primary alert-has-icon mt-4">
