@@ -11,19 +11,36 @@ In addition to some previous components, we also create another component that i
 
 Gallery is a component of Stisla that will allow you to create a picture presentation. Let's try this code.
 
+<!-- gallery wrapper -->
+<div class="preview">
+  <div class="gallery">
+    <!-- gallery item -->
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img05.jpg" data-title="Image 1"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img08.jpg" data-title="Image 2"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img03.jpg" data-title="Image 3"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img09.jpg" data-title="Image 4"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img10.jpg" data-title="Image 5"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img12.jpg" data-title="Image 6"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img14.jpg" data-title="Image 7"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img16.jpg" data-title="Image 8"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img11.jpg" data-title="Image 9"></div>
+  </div>
+</div>
+
+
 ```html
 <!-- gallery wrapper -->
   <div class="gallery">
     <!-- gallery item -->
-    <div class="gallery-item" data-image="../dist/img/news/img05.jpg" data-title="Image 1"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img08.jpg" data-title="Image 2"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img03.jpg" data-title="Image 3"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img09.jpg" data-title="Image 4"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img10.jpg" data-title="Image 5"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img12.jpg" data-title="Image 6"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img14.jpg" data-title="Image 7"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img16.jpg" data-title="Image 8"></div>
-    <div class="gallery-item" data-image="../dist/img/news/img11.jpg" data-title="Image 9"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img05.jpg" data-title="Image 1"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img08.jpg" data-title="Image 2"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img03.jpg" data-title="Image 3"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img09.jpg" data-title="Image 4"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img10.jpg" data-title="Image 5"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img12.jpg" data-title="Image 6"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img14.jpg" data-title="Image 7"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img16.jpg" data-title="Image 8"></div>
+    <div class="gallery-item" data-image="https://demo.getstisla.com/assets/img/news/img11.jpg" data-title="Image 9"></div>
   </div>
 ```
 
