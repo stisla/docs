@@ -145,7 +145,7 @@ Lastly, you can also create a dismissible card.
     <h4>Dismiss</h4>
     <!-- card dismiss toggle -->
     <div class="card-header-action">
-      <a data-dismiss="#mycard-dimiss" class="btn btn-icon"><i class="ion ion-close"></i></a>
+      <a data-dismiss="/#mycard-dimiss" class="btn btn-icon"><i class="ion ion-close"></i></a>
     </div>
   </div>
   <div class="card-body">
