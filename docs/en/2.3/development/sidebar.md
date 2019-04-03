@@ -44,3 +44,51 @@ You can also hide the sidebar by adding the sidebar-gone class in the `<body>` t
 <body class="sidebar-gone">
 ```
 
+### Sidebar Mini
+
+You would of provider a mini sidebar? Add an class `sidebar-mini` on `body` tag.
+
+
+```html
+<body class="sidebar-mini">
+```
+
+Open the assets/js/scripts.js file and search function: `toggle_sidebar_mini` will be inside `toggleLayout` change param for true:
+
+```javascript
+toggle_sidebar_mini(true)
+```
+Now, add these 02 functions after:
+
+$("body").removeClass("sidebar-mini");
+$("body").addClass("sidebar-gone");
+
+Look:
+
+```javascript
+if($('body').hasClass('sidebar-mini')) {
+  toggle_sidebar_mini(true);
+  $("body").removeClass("sidebar-mini");
+  $("body").addClass("sidebar-gone");
+
+  $('.main-sidebar').niceScroll(sidebar_nicescroll_opts);
+  sidebar_nicescroll = $(".main-sidebar").getNiceScroll();
+  }
+ ```
+ 
+ Soon after the **if** you finish you will see a code like this:
+ 
+ ```javascript
+ $("body").addClass("sidebar-gone");
+  ```
+  
+ Change to:
+ 
+ ```javascript
+ $("body").addClass("sidebar-mini");
+ ```
+  
+Search and comment this line... 
+  ```javascript 
+  $("body").removeClass("layout-2 layout-3 sidebar-mini sidebar-show");
+  ``` 
