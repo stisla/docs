@@ -60,8 +60,10 @@ toggle_sidebar_mini(true)
 ```
 Now, add these 02 functions after:
 
+```javascript
 $("body").removeClass("sidebar-mini");
 $("body").addClass("sidebar-gone");
+```
 
 Look:
 
