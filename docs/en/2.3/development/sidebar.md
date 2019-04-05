@@ -44,3 +44,29 @@ You can also hide the sidebar by adding the sidebar-gone class in the `<body>` t
 <body class="sidebar-gone">
 ```
 
+### Sidebar Mini
+
+You would of provider a mini sidebar? Add an class `sidebar-mini` on `body` tag.
+
+
+```html
+<body class="sidebar-mini">
+```
+
+Open the assets/js/scripts.js file and search function: `toggle_sidebar_mini` will be inside `toggleLayout` change param for true:
+
+```javascript
+toggle_sidebar_mini(true)
+```
+
+Search for:
+
+```javascript
+$("body").removeClass("sidebar-gone sidebar-show");
+```
+
+And add after:
+ 
+```javascript
+$("body").addClass("sidebar-mini");
+```
